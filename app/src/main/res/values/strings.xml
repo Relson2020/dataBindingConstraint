@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DataBindingPractice</string>
+    <string name="welcomeText">Welcome Back,</string>
+    <string name="signIn">Sign in to continue!</string>
+    <string name="email">Email</string>
+    <string name="emailHint">abc@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="passwordHint">12345678</string>
+    <string name="forgetPassword">Forget Password?</string>
+    <string name="signInButton">Sign in </string>
+</resources>

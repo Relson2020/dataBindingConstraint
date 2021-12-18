@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintDimensionRatio="W,6:11"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/welcomeTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcomeText"
+            android:textColor="#333"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewId"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/signTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signIn"
+            android:textSize="15sp"
+            android:textColor="#333"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeTextViewId"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/emailTextId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/signTextViewId"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditTextId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/emailHint"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailTextId"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/passwordTextId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailEditTextId"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditTextId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/passwordHint"
+                android:layout_marginTop="4dp"
+                android:inputType="textPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passwordTextId"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/forgetPasswordTextId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgetPassword"
+                android:textSize="14sp"
+                android:textColor="#0008FF"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passwordEditTextId"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="dfgdsfgdgfgdgd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/forgetPasswordTextId"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signInButton"
+                app:layout_constraintTop_toBottomOf="@id/checkBoxId"
+                android:backgroundTint="@color/blue"
+                android:padding="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
